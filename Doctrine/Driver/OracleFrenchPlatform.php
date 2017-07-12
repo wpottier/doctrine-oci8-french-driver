@@ -13,6 +13,7 @@ class OracleFrenchPlatform extends OraclePlatform
     {
         return 'd/m/Y H:i:sP';
     }
+    
     /**
      * {@inheritDoc}
      */
@@ -20,6 +21,15 @@ class OracleFrenchPlatform extends OraclePlatform
     {
         return 'd/m/Y 00:00:00';
     }
+    
+    /**
+     * {@inheritDoc}
+     */
+    public function getDateTimeFormatString()
+    {
+        return 'd/m/Y H:i:s';
+    }
+    
     /**
      * {@inheritDoc}
      */
